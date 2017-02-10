@@ -1,0 +1,25 @@
+<?php
+// created: 2015-07-21 10:25:44
+$mod_strings = array (
+  'LBL_EDITVIEW_PANEL1' => 'Overview',
+  'LBL_EDITVIEW_PANEL2' => 'Other',
+  'LBL_LEVEL_CONFIG' => 'Level Config',
+  'LBL_DETAILVIEW_PANEL1' => 'Overview',
+  'LBL_DETAILVIEW_PANEL2' => 'Other',
+  'LNK_NEW_RECORD' => 'Create Kind of Course',
+  'LNK_LIST' => 'View Kind of Course',
+  'LBL_MODULE_NAME' => 'Kind of Course',
+  'LBL_NEW_FORM_TITLE' => 'New Kind of Course',
+  'LNK_IMPORT_J_KINDOFCOURSE' => 'Import Kind of Course',
+  'LBL_LIST_FORM_TITLE' => 'Kind of Course List',
+  'LBL_SEARCH_FORM_TITLE' => 'Search Kind of Course',
+  'LBL_HOMEPAGE_TITLE' => 'My Kind of Course',
+  'LBL_DESCRIPTION' => 'Description',
+  'LBL_LEVEL' => 'Level',
+  'LBL_MODULE' => 'Module',
+  'LBL_BOOK' => 'Free Book',
+  'LBL_TEST_1' => 'Test 1',
+  'LBL_TEST_2' => 'Test 2',
+  'LBL_FINAL_TEST' => 'Final Test',
+  'LBL_HOURS' => 'Hours',
+);

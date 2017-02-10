@@ -1,0 +1,136 @@
+<?php
+/*********************************************************************************
+ * By installing or using this file, you are confirming on behalf of the entity
+ * subscribed to the SugarCRM Inc. product ("Company") that Company is bound by
+ * the SugarCRM Inc. Master Subscription Agreement (“MSA”), which is viewable at:
+ * http://www.sugarcrm.com/master-subscription-agreement
+ *
+ * If Company is not bound by the MSA, then by installing or using this file
+ * you are agreeing unconditionally that Company will be bound by the MSA and
+ * certifying that you have authority to bind Company accordingly.
+ *
+ * Copyright (C) 2004-2013 SugarCRM Inc.  All rights reserved.
+ ********************************************************************************/
+
+$relationships = array (
+  'j_coursefee_modified_user' => 
+  array (
+    'id' => '77e45656-09f4-a513-bc1f-55ea63dd7397',
+    'relationship_name' => 'j_coursefee_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'J_Coursefee',
+    'rhs_table' => 'j_coursefee',
+    'rhs_key' => 'modified_user_id',
+    'join_table' => NULL,
+    'join_key_lhs' => NULL,
+    'join_key_rhs' => NULL,
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => NULL,
+    'relationship_role_column_value' => NULL,
+    'reverse' => '0',
+    'deleted' => '0',
+    'readonly' => true,
+    'rhs_subpanel' => NULL,
+    'lhs_subpanel' => NULL,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => true,
+  ),
+  'j_coursefee_created_by' => 
+  array (
+    'id' => '7823882d-e30b-cf39-6024-55ea63342613',
+    'relationship_name' => 'j_coursefee_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'J_Coursefee',
+    'rhs_table' => 'j_coursefee',
+    'rhs_key' => 'created_by',
+    'join_table' => NULL,
+    'join_key_lhs' => NULL,
+    'join_key_rhs' => NULL,
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => NULL,
+    'relationship_role_column_value' => NULL,
+    'reverse' => '0',
+    'deleted' => '0',
+    'readonly' => true,
+    'rhs_subpanel' => NULL,
+    'lhs_subpanel' => NULL,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => true,
+  ),
+  'j_coursefee_assigned_user' => 
+  array (
+    'id' => '78f23551-131a-9a03-c8fc-55ea63c8a9d5',
+    'relationship_name' => 'j_coursefee_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'J_Coursefee',
+    'rhs_table' => 'j_coursefee',
+    'rhs_key' => 'assigned_user_id',
+    'join_table' => NULL,
+    'join_key_lhs' => NULL,
+    'join_key_rhs' => NULL,
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => NULL,
+    'relationship_role_column_value' => NULL,
+    'reverse' => '0',
+    'deleted' => '0',
+    'readonly' => true,
+    'rhs_subpanel' => NULL,
+    'lhs_subpanel' => NULL,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => true,
+  ),
+  'j_coursefee_j_class_1' => 
+  array (
+    'id' => 'e0de3150-2c4b-f6d1-026d-55ea637ba72b',
+    'relationship_name' => 'j_coursefee_j_class_1',
+    'lhs_module' => 'J_Coursefee',
+    'lhs_table' => 'j_coursefee',
+    'lhs_key' => 'id',
+    'rhs_module' => 'J_Class',
+    'rhs_table' => 'j_class',
+    'rhs_key' => 'id',
+    'join_table' => 'j_coursefee_j_class_1_c',
+    'join_key_lhs' => 'j_coursefee_j_class_1j_coursefee_ida',
+    'join_key_rhs' => 'j_coursefee_j_class_1j_class_idb',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => NULL,
+    'relationship_role_column_value' => NULL,
+    'reverse' => '0',
+    'deleted' => '0',
+    'readonly' => true,
+    'rhs_subpanel' => NULL,
+    'lhs_subpanel' => NULL,
+    'from_studio' => true,
+    'is_custom' => true,
+    'relationship_only' => false,
+    'for_activities' => false,
+  ),
+  'j_coursefee_j_payment_1' => 
+  array (
+    'rhs_label' => 'Payment & Enrollment',
+    'lhs_label' => 'Course Fee',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'J_Coursefee',
+    'rhs_module' => 'J_Payment',
+    'relationship_type' => 'one-to-many',
+    'readonly' => true,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => true,
+    'relationship_name' => 'j_coursefee_j_payment_1',
+  ),
+);

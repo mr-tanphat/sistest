@@ -1,0 +1,16 @@
+$(document).ready(function(){
+    hideAndShow();
+    $('#parent_type').change(function(){
+        hideAndShow();
+    })
+});
+function hideAndShow(){
+    val = $('#parent_type').val();
+    if(val == 'Accounts'){
+      $('#parent_type').closest('tr').next('tr').show();
+    }
+    else{
+        $('#parent_type').closest('tr').next('tr').hide(); 
+    }
+    
+}

@@ -1,0 +1,325 @@
+<?php
+$viewdefs['Leads'] = 
+array (
+  'DetailView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'form' => 
+      array (
+        'buttons' => 
+        array (
+          0 => 'EDIT',
+          1 => 'DUPLICATE',
+          2 => 'DELETE',
+          3 => 
+          array (
+            'customCode' => '{$btn_convert_2}',
+          ),
+          4 => 
+          array (
+            'customCode' => '{$send_survey}',
+          ),
+        ),
+        'headerTpl' => 'modules/Leads/tpls/DetailViewHeader.tpl',
+      ),
+      'maxColumns' => '2',
+      'useTabs' => false,
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'javascript' => '
+			{sugar_getscript file="custom/modules/Leads/js/addToPT.js"}
+			{sugar_getscript file="modules/Leads/Lead.js"}
+			',
+      'tabDefs' => 
+      array (
+        'LBL_CONTACT_INFORMATION' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_PANEL_GUARDIAN' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_PANEL_ADVANCED' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+      'syncDetailEditViews' => true,
+    ),
+    'panels' => 
+    array (
+      'LBL_CONTACT_INFORMATION' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'name',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 'nick_name',
+          1 => 'birthdate',
+        ),
+        2 => 
+        array (
+          0 => 'gender',
+          1 => 
+          array (
+            'name' => 'j_school_leads_1_name',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 'description',
+        ),
+      ),
+      'LBL_PANEL_GUARDIAN' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'guardian_name',
+            'label' => 'LBL_GUARDIAN_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'contact_rela',
+            'studio' => 'visible',
+            'label' => 'LBL_CONTACT_RELA',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 'phone_mobile',
+          1 => 'other_mobile',
+        ),
+        2 => 
+        array (
+          1 => 
+          array (
+            'name' => 'phone_other',
+            'comment' => 'Other phone number for the contact',
+            'label' => 'LBL_OTHER_PHONE',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 'email1',
+          1 => 
+          array (
+            'name' => 'primary_address_street',
+            'label' => 'LBL_PRIMARY_ADDRESS',
+            'type' => 'address',
+            'displayParams' => 
+            array (
+              'key' => 'primary',
+            ),
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'relationship',
+            'studio' => 'visible',
+            'label' => 'LBL_RELATIONSHIP',
+            'customCode' => '{$RELATIONSHIP}',
+          ),
+          1 => 
+          array (
+            'name' => 'describe_relationship',
+            'studio' => 'visible',
+            'label' => 'LBL_DESCRIBE_RELATIONSHIP',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'account_name',
+            'displayParams' => 
+            array (
+              'enableConnectors' => true,
+              'module' => 'Leads',
+              'connectors' => 
+              array (
+                0 => 'ext_rest_linkedin',
+              ),
+            ),
+          ),
+          1 => 'phone_work',
+        ),
+      ),
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'study_apollo_before',
+            'studio' => 'visible',
+            'label' => 'LBL_STUDY_APOLLO_BEFORE',
+          ),
+          1 => 
+          array (
+            'name' => 'study_other_before',
+            'studio' => 'visible',
+            'label' => 'LBL_STUDY_OTHER_BEFORE',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'time_study_english',
+            'studio' => 'visible',
+            'label' => 'LBL_TIME_STUDY_ENGLISH',
+          ),
+          1 => 
+          array (
+            'name' => 'study_with_before',
+            'studio' => 'visible',
+            'label' => 'LBL_STUDY_WITH_BEFORE',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'strong_skills',
+            'studio' => 'visible',
+            'label' => 'LBL_STRONG_SKILLS',
+          ),
+          1 => 
+          array (
+            'name' => 'weak_skills',
+            'studio' => 'visible',
+            'label' => 'LBL_WEAK_SKILLS',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'expectation',
+            'studio' => 'visible',
+            'label' => 'LBL_EXPECTATION',
+          ),
+          1 => 
+          array (
+            'name' => 'other_note',
+            'studio' => 'visible',
+            'label' => 'LBL_OTHER_NOTE',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'preferred_kind_of_course',
+            'studio' => 'visible',
+            'label' => 'LBL_PREFERRED_KIND_OF_COURSE',
+            'customCode' => '{$KOC}',
+          ),
+        ),
+      ),
+      'LBL_PANEL_ADVANCED' => 
+      array (
+        0 => 
+        array (
+          0 => 'lead_source',
+          1 => 
+          array (
+            'name' => 'status',
+            'customCode' => '{if $fields.status.value == "New"}
+                            <span class="textbg_green"><b>{$fields.status.value}<b></span>
+
+                            {elseif $fields.status.value == "Assigned"}
+                            <span class="textbg_bluelight"><b>{$fields.status.value}<b></span>
+
+                             {elseif $fields.status.value == "In Process"}
+                            <span class="textbg_blue"><b>{$fields.status.value}<b></span>
+
+                             {elseif $fields.status.value == "Converted"}
+                            <span class="textbg_red"><b>{$fields.status.value}<b></span>
+
+                             {elseif $fields.status.value == "PT/Demo"}
+                            <span class="textbg_violet"><b>{$fields.status.value}<b></span>
+
+                             {elseif $fields.status.value == "Recycled"}
+                            <span class="textbg_orange"><b>{$fields.status.value}<b></span>
+
+                              {elseif $fields.status.value == "Dead"}
+                            <span class="textbg_black"><b>{$fields.status.value}<b></span>
+
+                            {else}
+                            <span><b>{$fields.status.value}<b></span>
+                            {/if}',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 'lead_source_description',
+          1 => 
+          array (
+            'name' => 'potential',
+            'studio' => 'visible',
+            'label' => 'LBL_POTENTIAL',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'campaign_name',
+            'label' => 'LBL_CAMPAIGN',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 'assigned_user_name',
+          1 => 
+          array (
+            'name' => 'date_entered',
+            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
+            'label' => 'LBL_DATE_ENTERED',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 'team_name',
+          1 => 
+          array (
+            'name' => 'date_modified',
+            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
+            'label' => 'LBL_DATE_MODIFIED',
+          ),
+        ),
+      ),
+    ),
+  ),
+);

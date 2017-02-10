@@ -1,0 +1,27 @@
+<?php
+// created: 2014-12-19 09:50:43
+$mod_strings = array (
+  'LBL_REFUND_ADDRESS_STREET' => 'Address',
+  'LBL_CONTACTS_C_REFUNDS_1_FROM_CONTACTS_TITLE' => 'From Student',
+  'LBL_FILE_UPLOAD' => 'Attachment',
+  'LBL_REFOND_METHOD' => 'Method ',
+  'LBL_REFUND_AMOUNT' => 'Amount',
+  'LBL_EDITVIEW_PANEL1' => 'Other',
+  'LBL_AMOUNT_IN_WORDS' => 'Amount in words',
+  'LBL_REFUND_DATE' => 'Refund date',
+  'LBL_EXPORT_TO_EXCEL' => 'Export to Excel',
+  'LBL_REFUND_TYPE' => 'Type',
+  'LBL_STUDENT_NAME' => 'To Student',
+  'LBL_CENTER_NAME' => 'Move To Center',
+  'LNK_NEW_RECORD' => 'Create Refund',
+  'LNK_LIST' => 'View Refunds',
+  'LBL_MODULE_NAME' => 'Refunds',
+  'LBL_NEW_FORM_TITLE' => 'New Refund',
+  'LNK_IMPORT_C_REFUNDS' => 'Import Refunds',
+  'LBL_LIST_FORM_TITLE' => 'Refunds List',
+  'LBL_SEARCH_FORM_TITLE' => 'Search Refunds',
+  'LBL_EDIT_ALERT' => 'You do not have permission to access!',
+  'LBL_EDITVIEW_PANEL2' => 'Refund Page',
+  'LBL_ENDING_BALANCE' => 'Free Balance',
+  'LBL_RELATE_TO_ENROLL' => 'Relate To Enrollment',
+);

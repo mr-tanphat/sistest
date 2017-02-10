@@ -1,0 +1,18 @@
+.total, .total:focus{
+     font-weight: bold;
+     color: rgb(165, 42, 42); 
+     text-align: right; 
+     background-color: rgb(221, 221, 221);
+}
+
+
+#result thead tr th {
+  height: 30px;
+  background-color: rgb(221, 221, 221);
+}
+#result tbody tr td{
+ height: 50px;   
+}
+#result tbody tr{
+ border-top: 1px solid black;
+}

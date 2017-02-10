@@ -1,0 +1,26 @@
+/*
+
+#result tbody tr td input{
+width: 45px;
+}
+#result thead tr th{
+width: 51px;
+}
+#result tfoot tr td input{
+ width: 45px;
+}  */
+.total, .total:focus{
+     font-weight: bold;
+     color: rgb(165, 42, 42); 
+     text-align: right; 
+     background-color: rgb(221, 221, 221);
+}
+
+
+#result thead tr th {
+  height: 30px;
+  
+}
+#result tbody tr td{
+ height: 50px;   
+}

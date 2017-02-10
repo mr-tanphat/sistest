@@ -1,0 +1,70 @@
+/* Duplication table */
+.duplicationStatus, .helpTextButton, .quickEditButton {
+    display: inline-table;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    background-position: center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+
+.duplicationStatus.loading {
+        background-image: url('../../../custom/include/images/loading.gif');
+}
+
+.duplicationStatus.duplicated {
+    background-image: url('../../../custom/include/images/unchecked.gif');
+}
+
+.duplicationStatus.verified {
+    background-image: url('../../../custom/include/images/checked.gif');
+}
+
+#dialogDuplication {
+    border: 1px solid #AFAFAE;
+    margin-top: 5px;
+    display: none;  
+}
+
+#dialogDuplication #dialogTitle {
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #ffffff), color-stop(.02, #eeeeee), color-stop(1, #dfdfdf) );   
+    font-size: 14px;
+    color: red;
+    padding-top: 4px;
+    text-shadow: 0px 1px #fff;
+    padding: 5px;
+}
+
+#dialogDuplication #dialogTitle #btnCloseDialog {
+	background-image: url('../../../themes/RacerX/images/dashlet-header-close.png');
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    float: right;
+    margin-top: -3px;
+    margin-right: -5px;
+    cursor: pointer;   
+}
+
+#dialogDuplication #criteria {
+    padding: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#dialogDuplication #dialogContent table {
+    width: 100%;
+}
+#basic_search_link.collapsed {
+    background-position: right -12px;  
+
+}
+
+#basic_search_link.expanded {
+    background-position: right 4px;    
+}
